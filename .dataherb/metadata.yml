@@ -1,0 +1,29 @@
+name: ECU-IoHT
+description: Cyberattacks on the Internet of Health Things (IoHT) are increasingly prevalent, emphasizing the need for effective countermeasures. The development of the ECU-IoHT dataset addresses the critical shortage of publicly available data on IoHT cyberattacks, which is often due to privacy concerns. This dataset, created within an IoHT environment, simulates various attacks to expose multiple vulnerabilities. It serves as a resource for the healthcare security community to analyze attack behaviors and develop more robust countermeasures. Unique in its domain, the ECU-IoHT dataset enables the evaluation of different anomaly detection algorithms, revealing that nearest neighbor-based methods surpass clustering, statistical, and kernel-based approaches in identifying cyberattacks.
+contributors:
+  name: Mohiuddin Ahmed, Surender Byreddy, Anush Nutakki, Leslie Sikos & Paul Haskell-Dowland
+data:
+  name: ECU-IoHT-Dataset.xlsx
+  path: ECU-IoHT/dataset/ECU-IoHT-Dataset.csv
+  format: Microsoft Excel spreadsheet
+  md5: e9c962fefd4df45fc43bcb43c802c675
+  size: 5.2 MB
+  fields:
+name: No.
+description: Primary Key that uniquely identifies each entry in the dataset.
+name: Time
+description: Timestamp of the packet capture event.
+name: Source
+description: The IP address of the source from where the packet is originating.
+name: Destination
+description: The IP address of the destination to which the packet is sent.
+name: Protocol
+description: The type of protocol used for the packet transfer.
+name: Length
+description: The length of the packet in bytes.
+name: Info
+description: Detailed information about the packet, including flags, sequence, acknowledgment numbers, window size, and other TCP information.
+name: Type
+description: Classification of the traffic as normal or attack.
+name: Type of Attack
+description: Description of the type of attack if the traffic is classified as an attack, otherwise 'No Attack'.
